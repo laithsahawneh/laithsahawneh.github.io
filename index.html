@@ -1,1 +1,639 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+  <title>Laith Sahawneh</title>
+
+  <meta name="author" content="Laith Sahawneh">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Laith Sahawneh</name>
+              </p>
+              <p>I am currently a staff autonomous systems engineer at <a href="https://www.tusimple.com/">Tusimple </a> where I work on advancing self-driving trcuks system. Before that, I was a Senior Research Scientist with <a href="https://motional.com">Motional AD Inc</a>. I worked on the development of motion planning and decision-making algorithms for autonomous robotaxi vehicles.
+              </p>
+              <p>I earned my PhD from <a href="https://ece.byu.edu/">Brigham Young University</a>, where I was advised by <a href="https://ece.byu.edu/directory/randy-beard">Prof. Randay Beard</a>. I worked on Airborne Collision Detection and Avoidance for Small UAS Sense and Avoid Systems. My research was sponsored by the Defense Advanced Research Projects Agency under the Small Business Technology Transfer contract through UtopiaCompression and the NSF I/UCRC program through the<a href="https://iucrc.nsf.gov/centers/center-for-unmanned-aircraft-system/"> NSF Center for Unmanned Aircraft Systems (C-UAS)</a>.
+              </p>
+              <p> Upon finishing my PhD, I joined the Department of Mechanical and Aerospace Engineering at the University of Florida as a postdoctoral associate. I worked at UF’s remote facility, <a href="https://www.eng.ufl.edu/reef/"> the Research Engineering Education Facility (REEF)</a>, in conjunction with the Air Force Research Laboratory (AFRL) during which I have expanded my research expertise into new areas of multi-agent navigation and localization for autonomous systems.
+              </p>
+              <p>My research interests span the broad areas of navigation, guidance and control of autonomous systems with emphasis on state estimation, localization, path planning, conflict detection and avoidance.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:LaithSahawneh@gmail.com">email</a> &nbsp/&nbsp
+                <a href="data/Sahawneh-LaithR-vita.pdf">C.V.</a> &nbsp/&nbsp
+                <a href="data/Sahawneh-LaithR-resume.pdf">Resume</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=DOcVTEoAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/laith-sahawneh-97bb8718/">LinkedIn</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/LaithSahawneh.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/LaithSahawneh.jpg" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+<tr onmouseout="planlocalframe_stop()" onmouseover="planlocalframe_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+      <div class="one">
+        <a href="images/planlocallevel.png"><img style="width:120%;max-width:120%" alt="profile photo" src="images/planlocallevel.png" class="hoverZoomLink"></a>
+      </div>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://www.intechopen.com/chapters/57975">
+      <papertitle>Path Planning in the Local-Level Frame for Small Unmanned Aircraft Systems</papertitle>
+    </a>
+    <br>
+    <strong>Laith R. Sahawneh</strong>,
+		<a href="https://ece.byu.edu/directory/randy-beard">Randay W. Beard</a>
+    <br>
+    <em>A book chapter in Kinematics</em>, December, 2017 &nbsp</font>
+    <br>
+    <p>In this chapter, we propose a 3D path planning algorithm for small unmanned aircraft systems (UASs). We developed the path planning logic using a body fixed relative coordinate system which is the unrolled, unpitched body frame.
+    </p>
+    Check this recorded Simulation:
+    <a href="images/CA_LocalFrame0019.mp4">Part 1: In Local Level Frame </a>,
+    <a href="images/CA_LocalFrame0018.mp4">Part 2: In Global Frame</a>
+  </td>
+</tr>
+
+<tr onmouseout="groundBasedRadar_stop()" onmouseover="groundBasedRadar_start()">
+      <td style="padding:20px;width:25%;vertical-align:top">
+          <div class="one">
+            <div class="two" id='groundBasedRadar_image'>
+              <a href="images/elberta_RFtest_wcommt.mp4"> <video  width=120% height=80% muted autoplay loop>
+              <source src="images/elberta_RFtest_wcommt.mp4" type="video/mp4" class="hoverZoomLink">
+                Your browser does not support the video tag.
+            </video></a></div>
+            <img src='images/groundBasedRadarSAA_setup.gif' width="165">
+          </div>
+          <script type="text/javascript">
+              function groundBasedRadar_start() {
+                document.getElementById('groundBasedRadar_image').style.opacity = "1";
+              }
+              function groundBasedRadar_stop() {
+                document.getElementById('groundBasedRadar_image').style.opacity = "0";
+              }
+              groundBasedRadar_stop()
+         </script>
+      </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arc.aiaa.org/doi/10.2514/1.I010627">
+          <papertitle>A Ground-Based Sense-and-Avoid System for Small Unmanned Aircraft System</papertitle>
+        </a>
+        <br>
+        <strong>Laith R. Sahawneh</strong>,
+        <a href="https://www.linkedin.com/in/jared-wikle-45751961/" class="people" id="jwikle">Jared Wikle</a>,
+        <a href="https://www.linkedin.com/in/kaleo-roberts-62750264/"  class="people" id="kroberts">Kaleo Roberts</a>
+        <a href="https://jspencer.org/"  class="people" id="kroberts">Jonathan C. Spencer</a>
+        <a href="https://me.byu.edu/faculty/timmclain" class="people" id="tmclain">Tim McLain</a>,
+        <a href="https://ece.byu.edu/directory/karl-warnick" class="people" id="kwarnick">Karl Warnick</a>,
+        <a href="https://ece.byu.edu/directory/randy-beard" class="people" id="rbeard">Randy Beard</a>
+        <br>
+        <em>Journal of Aerospace Information Systems (JAIS) Vol. 15 Iss. 8 Pg. 501-517 </em>, 2018
+        <p>
+          This work demonstrates a complete end-to-end collision avoidance system where the ego drone communicates in real time with a ground-based radar sensor that detects intruders and computes safe avoidance trajectories. This work was the cumulative effort of many years of work by many, many people.
+       </p>
+         <a href="https://www.youtube.com/watch?v=ROTSd9pOs9I">Check this video!</a>
+    </td>
+</tr>
+
+<tr onmouseout="mindetectrange_stop()" onmouseover="mindetectrange_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <a href="images/ttvg.png"><img style="width:120%;max-width:170%" alt="profile photo" src="images/ttvg.png" class="hoverZoomLink"></a>
+        </div>
+     </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arc.aiaa.org/doi/abs/10.2514/1.I010479">
+          <papertitle>Minimum Required Detection Range for UAS Detect and Avoid Systems</papertitle>
+        </a>
+        <br>
+        <a href="https://www.linkedin.com/in/jared-wikle-45751961/" class="people" id="jwikle">Jared Wikle</a>,
+        <strong>Laith R. Sahawneh</strong>,
+        <a href="https://ece.byu.edu/directory/randy-beard" class="people" id="rbeard">Randy Beard</a>,
+        <a href="https://me.byu.edu/faculty/timmclain" class="people" id="tmclain">Tim McLain</a>
+        <br>
+        <em>American Institute of Aeronautics and Astronautics, Journal of Aerospace Information Systems, pp. 351-371 </em>, June, 2017.
+        <br>
+        <p> For unmanned aircraft systems to gain full access to the National Airspace System, they must have the capability to detect and avoid other aircraft. This paper describes two analytical methods for finding the minimum detection range to ensure that these detection and avoidance steps can be carried out.
+        </p>
+      </td>
+</tr>
+
+<tr>
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <a href="images/phdDisertation.png"><img src="images/phdDisertation.png" alt="dissertation" width="180" style="border-style: none" class="hoverZoomLink"></a>
+    </td>
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <p>
+        <a href="https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=6839&context=etd" class="docs" id="thesis">
+          <papertitle>Airborne Collision Detection and Avoidance for Small UAS Sense and Avoid Systems</papertitle>
+        </a>
+        <br>
+        <strong>Laith R. Sahawneh</strong>
+        <br>
+        <em>Brigham Young University Ph.D. Dissertation</em>, 2016
+        <br>
+      </p>
+      <p> In my dissertation, I worked on developing collision detection, risk assessment and avoidance framework using various sensors such camera, airborne and ground-based radars, and ADS-B that is computationally affordable and suitable to run on-board small UAS.
+  </td>
+</tr>
+<!-- <tr>
+  <td style="padding:10px;width:25%;vertical-align:middle">
+    <div class="one">
+      <video  width=120% height=80% muted autoplay loop>
+        <source src="images/Flighttests.mp4" type="video/mp4" class="hoverZoomLink">
+          Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="one">
+    <video  width=120% height=80% muted autoplay loop>
+        <source src="images/CA_LocalFrame0019.mp4" type="video/mp4" class="hoverZoomLink">
+          Your browser does not support the video tag.
+    </video>
+    </div>
+    <div class="one">
+        <a href="images/collisiondetection.mp4"> <video  width=120% height=80% muted autoplay loop>
+          <source src="images/collisiondetection.mp4" type="video/mp4" class="hoverZoomLink">
+            Your browser does not support the video tag.
+        </video></a>
+    </div>
+  </td>
+</tr> -->
+
+<tr onmouseout="adsb_stop()" onmouseover="adsb_start()">
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <div class="one">
+      <div class="two" id='adsb_image'>
+        <a href="images/self_separation.png"><img src="images/self_separation.png" alt="self_separation" width="200" style="border-style: none" class="hoverZoomLink"></a></div>
+          <img src='images/ClarityADSB.png' width="190">
+      </div>
+      <script type="text/javascript">
+          function adsb_start() {
+            document.getElementById('adsb_image').style.opacity = "1";
+          }
+          function adsb_stop() {
+            document.getElementById('adsb_image').style.opacity = "0";
+          }
+          adsb_stop()
+      </script>
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://arc.aiaa.org/doi/abs/10.2514/atcq.23.2-3.203">
+        <papertitle>Detect and Avoid for Small Unmanned Aircraft Systems using ADS-B</papertitle>
+      </a>
+      <br>
+      <strong>Laith R. Sahawneh</strong>,
+      <a href="https://www.linkedin.com/in/moduffield/" class="people" id="jwikle">Matthew O. Duffield</a>,
+      <a href="https://ece.byu.edu/directory/randy-beard" class="people" id="rbeard">Randy Beard</a>,
+      <a href="https://me.byu.edu/faculty/timmclain" class="people" id="tmclain">Tim McLain</a>
+      <br>
+      <em>Journal of Air Traffic Control Quarterly, Vol. 23, No. 2-3, pp. 203-240 </em>, 2015.
+      <br>
+      <p> This article presents a framework that consists of an Automatic Dependent Surveillance-Broadcast (ADS-B)-based sensor, track estimator, conflict/collision detection, and resolution that mitigates collision risk.
+      </p>
+    </td>
+</tr>
+
+<tr onmouseout="AirborneRadar_stop()" onmouseover="AirborneRadar_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='AirborneRadar_image'>
+        <a href="images/airboreRadarReults.png"><img style="width:130%;max-width:200%" alt="profile photo" src="images/airboreRadarReults.png" class="hoverZoomLink"></a></div>
+      <a href="images/AirborneRadarCDC.jpg"><img style="width:130%;max-width:200%" alt="profile photo" src="images/AirborneRadarCDC.jpg" class="hoverZoomLink"></a>
+     </div>
+    <script type="text/javascript">
+        function AirborneRadar_start() {
+          document.getElementById('AirborneRadar_image').style.opacity = "1";
+        }
+        function AirborneRadar_stop() {
+          document.getElementById('AirborneRadar_image').style.opacity = "0";
+        }
+        AirborneRadar_stop()
+   </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <p>
+        <a href="https://arc.aiaa.org/doi/abs/10.2514/1.I010284" class="docs" id="collisionrisk">
+         <papertitle>Airborne Radar-Based Collision Detection and Risk Estimation for Small Unmanned Aircraft Systems</papertitle>
+        </a>
+        <br>
+        <strong>Laith R. Sahawneh</strong>,
+        <a href="https://www.linkedin.com/in/james-mackie-1628a526/" class="people" id="jmackie">James Mackie</a>,
+        <a href="https://jspencer.org/" class="people" id="jspencer">Jonathan C. Spencer</a>,
+        <a href="https://ece.byu.edu/directory/randy-beard" class="people" id="rbeard">Randy Beard</a>,
+        <a href="https://ece.byu.edu/directory/karl-warnick" class="people" id="kwarnick">Karl Warnick</a>
+        <br>
+        <em>Journal of Aerospace Information Systems (JAIS) Vol. 12 Iss. 12 Pg. 756-766 </em>, 2015
+        <br>
+    </p>
+    <p>This work estimates probability of collision risk for a pair of aircraft at the same altitude using state estimates from a radar sensor and a reachable sets framework.
+    </p>
+  </td>
+</tr>
+
+<tr onmouseout="loselykf_stop()" onmouseover="loselykf_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='loselykf_image'>
+        <a href="images/strapdownkf.png"><img style="width:120%;max-width:200%" alt="profile photo" src="images/strapdownkf.png" class="hoverZoomLink"></a></div>
+        <img src='images/loselykf.png' width="190">
+    </div>
+    <script type="text/javascript">
+      function loselykf_start() {
+        document.getElementById('loselykf_image').style.opacity = "1";
+      }
+      function loselykf_stop() {
+        document.getElementById('loselykf_image').style.opacity = "0";
+      }
+      loselykf_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <p>
+      <a href="https://arc.aiaa.org/doi/abs/10.2514/1.I010284" class="docs" id="collisionrisk">
+       <papertitle>Real-Time Implementation of GPS Aided Low Cost Strapdown Inertial Navigation System</papertitle>
+      </a>
+      <br>
+      <strong>Laith R. Sahawneh</strong>,
+      <a href="https://www.linkedin.com/in/mohammadamin-al-jarrah-b121b01b/" class="people" id="mjarrah">M.A. Al-Jarrah</a>,
+        <a href="https://www.linkedin.com/in/khaled-assaleh-b31341b/" class="people" id="kassaleh">K. Assaleh</a>,
+        <a href="https://www.linkedin.com/in/mamoun-abdel-hafez-8462483b/" class="people" id="mHafez">Mamoun F. Abdel-Hafez</a>
+        <br>
+        <em>Journal of Intelligent and Robotic Systems, vol. 61, No. 1-4, pp. 527–544</em>, 2011
+        <br>
+    </p>
+    <p>This work details the study, development, and experimental implementation of GPS aided strapdown inertial navigation system (INS) using commercial off-the-shelf low-cost inertial measurement unit (IMU).
+    </p>
+  </td>
+</tr>
+
+
+<tr onmouseout="elativeposeest_stop()" onmouseover="elativeposeest_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+                <img src='images/relativeposeest.gif' width="190">
+          </div>
+     </td>
+     <td style="padding:20px;width:75%;vertical-align:middle">
+       <p>
+          <a href="https://ieeexplore.ieee.org/document/8431743" class="docs" id="2016infotec">
+            <papertitle>Relative Pose Estimation using Range-only Measurements with Large Initial Uncertainty</papertitle>
+          </a>
+          <br>
+          <a href="https://www.linkedin.com/in/anusnachakraborty/" class="people" id="achakraborty">Anusna Chakraborty</a>,
+          <a href="https://www.linkedin.com/in/kmbrink/" class="people" id="kbrink">Kevin Brink</a>,
+          <a href="https://researchdirectory.uc.edu/p/sharmar7" class="people" id="rajnikant">Rajnikant Sharma</a>,
+          <strong>Laith R. Sahawneh</strong>
+          <br>
+          <em> In proceedings of the 2018 American Control Conference (ACC) </em>, June 27–29, 2018
+          <br>
+       </p>
+          <p> In this paper, a relative frame localization problem is addressed for pairs of vehicles with significant initial pose uncertainties. A relative frame Extended Kalman filter (EKF) is developed for the case where vehicles share odometry (body-frame delta position values), and are capable of getting inter-vehicle range measurements.</p>
+     </td>
+</tr>
+
+<tr onmouseout="factorgraphs_stop()" onmouseover="factorgraphs_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+            <div class="two" id='factorgraphs_image'>
+              <a href="images/factorgraphs_model.png"><img alt="profile photo" src="images/factorgraphs_model.png" width="200" class="hoverZoomLink"></a> </div>
+              <img src='images/factorgraphs.png' width="180">
+          </div>
+          <script type="text/javascript">
+            function factorgraphs_start() {
+              document.getElementById('factorgraphs_image').style.opacity = "1";
+            }
+            function factorgraphs_stop() {
+              document.getElementById('factorgraphs_image').style.opacity = "0";
+            }
+            factorgraphs_stop()
+          </script>
+     </td>
+     <td style="padding:20px;width:75%;vertical-align:middle">
+       <p>
+          <a href="https://www.ion.org/publications/abstract.cfm?articleID=14895" class="docs" id="2016infotec">
+            <papertitle>Factor Graphs-Based Multi-Robot Cooperative Localization: A Study of Shared Information Influence on Optimization Accuracy and Consistency</papertitle>
+          </a>
+          <br>
+          <strong>Laith R. Sahawneh</strong>,
+          <a href="https://www.linkedin.com/in/kmbrink/" class="people" id="kbrink">Kevin Brink</a>
+          <br>
+          <em> proceedings of the 2017 International Technical Meeting of the Institute of Navigation, Monterey, CA, pp. 819-838 </em>, January 30-1, 2017
+          <br>
+       </p>
+          <p> This work studies the performance of a decentralized cooperative localization using relative observations between robots and measurements to landmarks in the context of batch optimization of factor graphs.
+          </p>
+     </td>
+</tr>
+
+<tr onmouseout="plan3d_stop()" onmouseover="plan3d_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='plan3d_image'>
+            <a href="images/3Dplanning_2.png"><img alt="profile photo" src="images/3Dplanning_2.png" width="190" class="hoverZoomLink"></a> </div>
+            <img src='images/3Dplanning.png' width="190">
+        </div>
+        <script type="text/javascript">
+          function plan3d_start() {
+            document.getElementById('plan3d_image').style.opacity = "1";
+          }
+          function plan3d_stop() {
+            document.getElementById('plan3d_image').style.opacity = "0";
+          }
+          plan3d_stop()
+        </script>
+     </td>
+     <td style="padding:20px;width:75%;vertical-align:middle">
+       <p>
+          <a href="https://ieeexplore.ieee.org/document/7502528" class="docs" id="2016icuas">
+            <papertitle>3D Path Planning for Small UAS Operating in Low-Altitude Airspace</papertitle>
+          </a>
+          <br>
+          <strong>Laith R. Sahawneh</strong>,
+          <a href="https://www.linkedin.com/in/matthew-argyle-a2272742/" class="people" id="amatthew">Argyle E., Matthew</a>,
+          <a href="https://ece.byu.edu/directory/randy-beard" class="people" id="rbeard">Randy Beard</a>
+          <br>
+          <em> 2016 International Conference on Unmanned Aircraft Systems (ICUAS), IEEE, pp. 413-419 </em>, June, 2016
+          <br>
+       </p>
+          <p> We proposed a two step path planning algorithm with collision detection logic for small UAS. The path planning approach taken in this work is carried out in two steps. In the first step, an initial suboptimal path is generated using A* search. In the second step, a chain of unit masses connected by springs and dampers evolves in a simulated force field, using the A* solution as an initial condition. A unique strength of this approach is the ability to use dynamic chain analogy to smooth path into a fiyable shape while mainlining a safe distance from intruders.
+          </p>
+     </td>
+</tr>
+
+<tr onmouseout="benchmarkrgbd_stop()" onmouseover="benchmarkrgbd_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+                <img src='images/benchmarkrgbd.png' width="190">
+          </div>
+     </td>
+     <td style="padding:20px;width:75%;vertical-align:middle">
+       <p>
+          <a href="" class="docs" id="2016infotec">
+            <papertitle>Benchmarking Real-Time RGBD Odometry for Light-Duty UAVs</papertitle>
+          </a>
+          <br>
+          <a href="https://ece.charlotte.edu/directory/dr-andrew-r-willis-phd" class="people" id="willisr">Willis, A. R.</a>,
+          <strong>Laith R. Sahawneh</strong>,
+          <a href="https://www.linkedin.com/in/kmbrink/" class="people" id="kbrink">Kevin Brink</a>
+          <br>
+          <em> Proceeding SPIE Vol. 9867, Three-Dimensional Imaging, Visualization, and Display </em>, June 1, 2016
+          <br>
+       </p>
+          <p> This article describes the theoretical and implementation challenges associated with generating 3D odometry estimates (delta-pose) from RGBD sensor data in real-time to facilitate navigation in cluttered indoor environments.</p>
+     </td>
+</tr>
+
+<tr onmouseout="minrequiredSense_stop()" onmouseover="minrequiredSense_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+              <a href="images/minSensingRange.gif"><img style="width:200%;max-width:110%" alt="profile photo" src="images/minSensingRange.gif" class="hoverZoomLink"></a>
+          </div>
+     </td>
+     <td style="padding:20px;width:75%;vertical-align:middle">
+       <p>
+          <a href="https://arc.aiaa.org/doi/10.2514/6.2016-1982" class="docs" id="2016aiaainfotec">
+            <papertitle>Minimum Required Sensing Range for UAS Sense and Avoid Systems</papertitle>
+          </a>
+          <br>
+          <strong>Laith R. Sahawneh</strong>,
+          <a href="https://jspencer.org/" class="people" id="jspencer">Jonathan C. Spencer</a>,
+          <a href="https://ece.byu.edu/directory/randy-beard" class="people" id="rbeard">Randy Beard</a>,
+          <a href="https://ece.byu.edu/directory/karl-warnick" class="people" id="kwarnick">Karl Warnick</a>
+          <br>
+          <em> AIAA Infotech @ Aerospace </em>, 2016
+          <br>
+       </p>
+          <p> Based on realistic sensor models, maximum flight velocities of several different aircraft and a minimum safe distance of 500 ft, we determine that the minimum sensing distance for a UAV to be able to successfully detect, compute and execute a maneuver is 1.8km.
+          </p>
+     </td>
+</tr>
+
+<tr onmouseout="probCD_stop()" onmouseover="probCD_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+             <div class="two" id='probCD_image'>
+               <a href="images/probCollisiondetection.mp4"><video  width=120% height=90% muted autoplay loop>
+               <source src="images/probCollisiondetection.mp4" type="video/mp4" class="hoverZoomLink">
+                 Your browser does not support the video tag.
+               </video></a></div>
+               <img src='images/probabilisticFrameworkUAS.gif' width="190">
+             </div>
+           </div>
+           <script type="text/javascript">
+             function probCD_start() {
+                 document.getElementById('probCD_image').style.opacity = "1";
+             }
+             function probCD_stop() {
+                 document.getElementById('probCD_image').style.opacity = "0";
+             }
+             probCD_stop()
+          </script>
+     </td>
+     <td style="padding:20px;width:75%;vertical-align:middle">
+       <p>
+          <a href="https://ieeexplore.ieee.org/document/7039388" class="docs" id="2014ieeecdc">
+            <papertitle>A Probabilistic Framework for Unmanned Aircraft Systems Collision Detection and Risk Estimation</papertitle>
+          </a>
+          <br>
+          <strong>Laith R. Sahawneh</strong>,
+          <a href="https://ece.byu.edu/directory/randy-beard" class="people" id="rbeard">Randy Beard</a>
+          <br>
+          <em> IEEE Control and Decision Conference (CDC), Los Angeles</em>, December 15-17, 2014
+          <br>
+       </p>
+          <p> In this paper, we develop an innovative approach to quantify likely intruder trajectories and estimate the probability of collision risk for a pair of aircraft flying at the same altitude in close proximity. The proposed approach is formulated in a probabilistic framework building upon the uncorrelated encounter model (UEM) developed by MIT Lincoln Laboratory (LL) and the concept of forward reachable sets.
+          </p>
+     </td>
+</tr>
+
+<tr onmouseout="ChainbasedCollision_stop()" onmouseover="ChainbasedCollision_start()">
+    <td style="padding:20px;width:25%;vertical-align:middle">
+         <div class="one">
+            <div class="two" id='ChainbasedCollision_image'>
+              <a href="images/CBCA_PR0003.mp4"><video  width=130% height=90% muted autoplay loop>
+              <source src="images/CBCA_PR0003.mp4" type="video/mp4" class="hoverZoomLink">
+                Your browser does not support the video tag.
+              </video></a></div>
+              <img src='images/chainBasedCA.png' width="200">
+            </div>
+          </div>
+          <script type="text/javascript">
+            function ChainbasedCollision_start() {
+                document.getElementById('ChainbasedCollision_image').style.opacity = "1";
+            }
+            function ChainbasedCollision_stop() {
+                document.getElementById('ChainbasedCollision_image').style.opacity = "0";
+            }
+            ChainbasedCollision_stop()
+         </script>
+    </td>
+     <td style="padding:20px;width:75%;vertical-align:middle">
+       <p>
+          <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2013-4995" class="docs" id="aiaa2013">
+            <papertitle>Chain-based Collision Avoidance for UAS Sense-and-Avoid Systems</papertitle>
+          </a>
+          <br>
+          <strong>Laith R. Sahawneh</strong>,
+          <a href="https://ece.byu.edu/directory/randy-beard" class="people" id="rbeard">Randy Beard</a>,
+          <a href="https://www.linkedin.com/in/sharathavadh/" class="people" id="avadhanam">Sharath Avadhanam</a>,
+          <a href="https://ceat.okstate.edu/mae/faculty-staff/faculty-bios/he-bai.html" class="people" id="hai">Bai, He</a>
+          <br>
+          <em> AIAA Guidance, Navigation, and Control Conference, Boston, MA, Paper no. AIAA-2013-4995</em>, August, 2013
+          <br>
+       </p>
+       <p> In this paper, we proposed a feasible collision avoidance based on a virtual chain placed in a virtual force field is proposed. The chain is described by a set of ordinary differential equations that is driven by virtual forces to find the steady-state equilibrium. We have also presented a method for detecting imminent collisions using passive monocular sensors based on UtopiaCompression’s unique technology M2PAR. Our <a href="http://www.et.byu.edu/~beard/papers/preprints/SahawnehBeard13.pdf">preprint paper</a>.
+      </p>
+      <a href="https://www.youtube.com/watch?v=hfJHgUMC5yc">Video 1,</a> <a href="https://www.youtube.com/watch?v=puz-Xm_Z2co">Video 2,</a> <a href="https://www.youtube.com/watch?v=sEOWCQDIxCI">Video 3.</a>  <a href="https://www.youtube.com/watch?v=dV4ERU78KPs">Video 4.</a>
+     </td>
+</tr>
+
+<tr>
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <div class="one">
+        <div class="two" id='thesis_image'>
+          <a href="images/mymscthesis_2.png"><img style="width:120%;max-width:200%" alt="profile photo" src="images/mymscthesis_2.png" class="hoverZoomLink"></a></div>
+          <img src='images/mymscthesis.png' width="190">
+      </div>
+      <script type="text/javascript">
+        function thesis_start() {
+          document.getElementById('thesis_image').style.opacity = "1";
+        }
+        function thesis_stop() {
+          document.getElementById('thesis_image').style.opacity = "0";
+        }
+        thesis_stop()
+      </script>
+    </td>
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <p>
+          <papertitle>Real-Time Implementation of GPS aided Low Cost Strapdown Inertial Navigation System</papertitle>
+        </a>
+        <br>
+        <strong>Laith R. Sahawneh</strong>
+        <br>
+        <em>American University of Sharjah A M.Sc. THESIS IN MECHATRONICS</em>, April 2009
+        <br>
+      </p>
+      <p> My <a href="data/Sahawneh-LaithR_ThesisMechatronics.pdf">thesis</a> describe the theoretical development and practical implementation in real-time of strapdown inertial navigation system (INS) using commercial of the shelf low cost inertial measurement unit (IMU) aided with the Global Positioning System (GPS).
+  </td>
+</tr>
+
+<tr onmouseout="imu6d_stop()" onmouseover="imu6d_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+       <a href="images/6dofimu.png"><img alt="profile photo" src="images/6dofimu.png" width="190" class="hoverZoomLink"></a>
+    </div>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <p>
+      <a href="https://ieeexplore.ieee.org/document/4648819" class="docs" id="ieee6dof2008">
+       <papertitle>Development and calibration of low cost MEMS IMU for UAV applications</papertitle>
+      </a>
+      <br>
+      <strong>Laith R. Sahawneh</strong>,
+      <a href="https://www.linkedin.com/in/mohammadamin-al-jarrah-b121b01b/" class="people" id="mjarrah">M.A. Al-Jarrah</a>
+        <br>
+        <em>Proceedings of the 5th International Symposium on Mechatronics and its Applications (ISMA08), Amman, Jordan.</em>, 2008
+        <br>
+    </p>
+    <p> We proposed an affordable and reliable low-cost inertial measurement unit (IMU) is designed using commercial off-the-shelf (COTS) components.The proposed methodology requires no precise mechanical platform for the accelerometer while as simple rotating table is utilized for the rate-gyros calibration.
+    </p>
+  </td>
+</tr>
+
+
+<!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+    <tr>
+      <td>
+          <heading>Patents</heading>
+      </td>
+    </tr>
+</tbody></table> -->
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+      <tr>
+        <td>
+            <heading>Teaching</heading>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:20px;width:25%;vertical-align:middle">
+                 <img src="images/teacher.jpg" alt="dissertation" width="180" style="border-style: none">
+        </td>
+        <td>
+                 - Graduate Teaching Assistant, Feedback Control of Dynamic Systems (ECEn 483/ ME 431).
+                <br><br>
+                 - Graduate Teaching Assistant, Mechatronics Design Lab (MTR 590).
+                <br><br>
+                 - Undergraduate Teaching Assistant, Theory of Semiconductors (EE 246).
+        </td>
+      </tr>
+    </tbody>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+  <tbody>
+    <tr>
+          <td>
+              <heading>Service</heading>
+          </td>
+    </tr>
+    <tr>
+      <td style="padding:20px;width:25%;vertical-align:middle">
+               <img src="images/globe.jpg" alt="dissertation" width="180" style="border-style: none">
+        </td>
+        <td>
+              - Member of IEEE.
+              <br>
+              - IEEE-Eta Kappa Nu (IEEE-HKN).
+              <br>
+              - Member of AIAA.
+              <br>
+              - IEEE Aerospace and Electronics Society (AESS)
+              <br>
+              - 30+ paper reviews (ACC, CDC, JAIS, JGCD, ICUAS)
+              <br>
+              - Named an Excellent Reviewer for the Journal of Guidance, Control, and Dynamics twice for the years 2016 and 2017
+        </td>
+    </tr>
+  </tbody>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+       <tr>
+         <td>
+           <br>
+           <p align="center">
+             <font size="1">
+               <a href="https://jonbarron.info" class="docs" id="pagesource">Webpage formatting inspired by Jon Barron webpage</a>
+               </font>
+           </p>
+         </td>
+       </tr>
+     </table>
+     </td>
+ </tr>
+</table>
+
+
+</html>
