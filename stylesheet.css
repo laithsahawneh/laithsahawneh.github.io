@@ -1,4 +1,8 @@
 /* latin-ext */
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+---
+
 @font-face {
   font-family: 'Lato';
   font-style: italic;
